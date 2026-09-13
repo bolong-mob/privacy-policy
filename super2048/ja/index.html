@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スーパー2048 プライバシーポリシー</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/super2048/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-tw/">
+<link rel="alternate" hreflang="ja" href="https://bolong-mob.github.io/privacy-policy/super2048/ja/">
+<link rel="alternate" hreflang="fr" href="https://bolong-mob.github.io/privacy-policy/super2048/fr/">
+<link rel="alternate" hreflang="nl" href="https://bolong-mob.github.io/privacy-policy/super2048/nl/">
+<style>
+    :root {
+        --primary: #8f7a66;
+        --primary-soft: #f2eae2;
+        --accent: #edcf72;
+        --text: #776e65;
+        --text-strong: #453e38;
+        --text-secondary: #9a8f86;
+        --background: #faf8ef;
+        --surface: #ffffff;
+        --border: #e8e0d5;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #d9c7b6;
+            --primary-soft: #2f2a25;
+            --accent: #edcf72;
+            --text: #d5cdc4;
+            --text-strong: #f4f0ea;
+            --text-secondary: #a79d93;
+            --background: #16150f;
+            --surface: #221f1b;
+            --border: #37322c;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "Yu Gothic UI", Meiryo, Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.9;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 16px;
+        background: #bbada0;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 21px; font-weight: 800; letter-spacing: -0.5px; color: #f9f6f2;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 22px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="言語">
+        <option value="../">English</option>
+        <option value="../zh-cn/">简体中文</option>
+        <option value="../zh-tw/">繁體中文</option>
+        <option value="" selected>日本語</option>
+        <option value="../fr/">Français</option>
+        <option value="../nl/">Nederlands</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">2048</div>
+        <h1>スーパー2048 プライバシーポリシー</h1>
+        <p class="subtitle">定番 2048 数字合体パズルゲーム</p>
+    </div>
+
+    <div class="update-date">最終更新日：2026年9月13日</div>
+
+    <div class="toc">
+        <h2>目次</h2>
+        <ol>
+            <li><a href="#intro">はじめに</a></li>
+            <li><a href="#data-collection">収集する情報</a></li>
+            <li><a href="#data-use">情報の利用目的</a></li>
+            <li><a href="#permissions">アプリの権限</a></li>
+            <li><a href="#data-storage">データの保存と安全管理</a></li>
+            <li><a href="#third-party">第三者サービス</a></li>
+            <li><a href="#ads">広告とお客様の選択</a></li>
+            <li><a href="#gdpr">お客様の権利と GDPR</a></li>
+            <li><a href="#children">子どものプライバシー</a></li>
+            <li><a href="#changes">ポリシーの変更</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. はじめに</h2>
+        <p>スーパー2048（以下「本アプリ」）は Android 向けのオフライン数字合体パズルゲームです。グリッド上でタイルをスライドし、同じ数字を合体させてより大きな値を目指します。本アプリは複数のグリッドサイズ、スキン、プレイモード、および任意で利用できるオンラインランキングを提供します。</p>
+        <p>私たちはお客様のプライバシーを重視しています。本ポリシーでは、本アプリが情報をどのように扱い、どのように保護し、お客様にどのような選択肢があるかを説明します。本アプリをご利用いただくことで、以下の内容に同意したものとみなされます。</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. 収集する情報</h2>
+        <p>本アプリは<span class="highlight">お客様の個人情報を収集・送信・保存しません</span>。登録やログインも不要です。具体的には次のとおりです。</p>
+        <ul>
+            <li><strong>アカウント情報を収集しません。</strong>氏名、メールアドレス、電話番号、パスワードをお伺いすることはありません。</li>
+            <li><strong>端末識別子を収集しません。</strong>IMEI、Android ID、MAC アドレスなどの識別子は収集しません。</li>
+            <li><strong>位置情報を収集しません。</strong>位置情報の権限を要求せず、位置を読み取ることもありません。</li>
+            <li><strong>解析・追跡を行いません。</strong>解析 SDK を一切含まず、ユーザープロファイルの作成も行いません。</li>
+        </ul>
+        <p>本アプリが生成するデータは、すべてお客様の端末内にのみ保存されます。</p>
+        <ul>
+            <li>ゲームの進行状況、現在のスコア、ベストスコア、各種設定（グリッドサイズ、スキン、サウンド、アニメーション、言語、ナイトモード）は、アプリのローカルストレージに保存されます。</li>
+            <li>カスタム背景を設定した場合、選択した画像は縮小されて端末内の本アプリ専用領域にコピーされます。</li>
+            <li>バックアップファイルは、お客様が「バックアップ」を明示的にタップしたときだけ作成され、選択した保存先に書き込まれます。</li>
+        </ul>
+    </section>
+
+    <section id="data-use">
+        <h2>3. 情報の利用目的</h2>
+        <p>個人情報を収集していないため、利用・販売・第三者への提供の対象となる情報はありません。端末内に保存されたデータは、次の目的にのみ使用されます。</p>
+        <ul>
+            <li>次回アプリを開いたときに、進行中のゲームを復元するため。</li>
+            <li>スキン、グリッドサイズ、言語、ナイトモードなどの設定を反映するため。</li>
+            <li>盤面の背景にカスタム背景画像を表示するため。</li>
+        </ul>
+        <p>これらのデータは、システム設定でアプリのデータを消去するか、本アプリをアンインストールすることでいつでも削除できます。</p>
+    </section>
+
+    <section id="permissions">
+        <h2>4. アプリの権限</h2>
+        <p>本アプリが要求する権限は 2 つだけで、いずれも広告およびランキング機能に由来します。</p>
+        <ul>
+            <li><strong>INTERNET</strong> および <strong>ACCESS_NETWORK_STATE</strong>：広告の読み込みと、ランキングのためにサインインした際に Google Play ゲームサービスと通信するために必要です。ゲーム自体はオフラインでも完全に遊べます。</li>
+        </ul>
+        <p>本アプリは<span class="highlight">ストレージ、位置情報、カメラ、マイク、連絡先の権限を要求しません</span>。背景画像やバックアップファイルの選択は Android のシステムファイル選択画面で行われるため、選択した 1 つのファイルだけがアクセスを許可されます。</p>
+        <p>権限はシステム設定でいつでも拒否・取り消しできます。権限がなくてもゲームは問題なく遊べます。</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>5. データの保存と安全管理</h2>
+        <p>ゲームデータはすべて、お客様の端末内にある本アプリの専用ディレクトリに保存されます。Android のアプリサンドボックスにより他のアプリからは読み取れず、アンインストールすると削除されます。</p>
+        <p>私たちはサーバーを運用していないため、お客様のゲームデータを受け取ったり保存・処理したりすることはありません。端末で Android のシステムバックアップが有効な場合、アプリデータがお客様自身の Google アカウントのバックアップに含まれることがありますが、これはシステム設定で管理でき、私たちがアクセスすることはできません。</p>
+    </section>
+
+    <section id="third-party">
+        <h2>6. 第三者サービス</h2>
+        <p>本アプリは、Google が提供する以下のサービスを組み込んでいます。</p>
+        <ul>
+            <li><strong>Google AdMob</strong>：ゲームを無料で提供するためのバナー広告とインタースティシャル広告を配信します。</li>
+            <li><strong>Google Play ゲームサービス</strong>：お客様がサインインを選んだ場合にのみ、スコアの送信とランキング表示のために使用します。</li>
+        </ul>
+        <p>これらのサービスは Google 自身のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>）に従って運用されます。これら以外に、解析・追跡・SNS 系の SDK は組み込んでいません。</p>
+    </section>
+
+    <section id="ads">
+        <h2>7. 広告とお客様の選択</h2>
+        <p>本アプリは無料で提供され、広告によって運営されています。そのため Google AdMob のバナー広告とインタースティシャル広告を表示します。広告の選択・配信・効果測定のために、AdMob は広告 ID、端末のモデル、おおよその地域などの情報を収集することがあります。</p>
+        <ul>
+            <li>開発者である私たちが AdMob からお客様の個人データを受け取ることはなく、集計された収益レポートのみを確認します。</li>
+            <li>お客様は「Android の設定 → プライバシー → 広告」で、いつでも<strong>広告 ID のリセット・削除</strong>および<strong>広告のカスタマイズの無効化</strong>ができます。</li>
+            <li>法令で求められる場合、広告のカスタマイズは Google の広告ツールが取得する同意内容に基づきます。同意内容はいつでも確認・変更できます。</li>
+        </ul>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. お客様の権利と GDPR</h2>
+        <p>EU の一般データ保護規則（GDPR）および同種の法令に基づき、次のとおりご説明します。</p>
+        <ul>
+            <li><strong>データ管理者。</strong>本アプリの開発者がデータ管理者です。本アプリは私たちのシステム上で個人データを収集しないため、私たちが管理する個人データの記録は存在しません。</li>
+            <li><strong>法的根拠。</strong>本アプリ自体は個人データを処理しないため、GDPR 第 6 条に基づく法的根拠は必要ありません。広告に関する処理は、上記のとおり Google が行います。</li>
+            <li><strong>お客様の権利。</strong>私たちが個人データを保持していない場合でも、アクセス、訂正、削除、処理の制限、データポータビリティ、異議申立てを含むすべての権利はお客様に留保されます。</li>
+            <li><strong>広告データ。</strong>広告データについてこれらの権利を行使する場合は、Google のプライバシー管理ツール（<a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>）をご利用ください。</li>
+            <li><strong>苦情申立て。</strong>お客様は、お住まいの地域のデータ保護監督機関に苦情を申し立てる権利があります。</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. 子どものプライバシー</h2>
+        <p>本アプリは幅広い年齢層向けのパズルゲームであり、13 歳未満の子どもを対象としたものではありません。私たちは子どもから個人情報を故意に収集することはなく、そもそも個人データを収集しないため、保持すべき子どものデータは存在しません。</p>
+        <p>保護者の方で、本アプリに表示される広告について懸念がある場合は、上記の方法でシステム設定から広告のカスタマイズを無効にできます。お子様が情報を提供したと思われる場合は、ご連絡いただければ速やかに対応します。</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. ポリシーの変更</h2>
+        <p>本プライバシーポリシーは随時更新することがあります。新しい版は常にこのページに掲載し、「最終更新日」を更新します。重要な変更の場合はアプリ内でもお知らせします。更新後も本アプリの利用を続けることで、改訂後のポリシーに同意したものとみなされます。</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. お問い合わせ</h2>
+        <p>本プライバシーポリシーまたは本アプリについてご質問やご提案がある場合は、下記までご連絡ください。</p>
+        <ul>
+            <li>メール：android.bolong@gmail.com</li>
+        </ul>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 スーパー2048. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité de Super 2048</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/super2048/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-tw/">
+<link rel="alternate" hreflang="ja" href="https://bolong-mob.github.io/privacy-policy/super2048/ja/">
+<link rel="alternate" hreflang="fr" href="https://bolong-mob.github.io/privacy-policy/super2048/fr/">
+<link rel="alternate" hreflang="nl" href="https://bolong-mob.github.io/privacy-policy/super2048/nl/">
+<style>
+    :root {
+        --primary: #8f7a66;
+        --primary-soft: #f2eae2;
+        --accent: #edcf72;
+        --text: #776e65;
+        --text-strong: #453e38;
+        --text-secondary: #9a8f86;
+        --background: #faf8ef;
+        --surface: #ffffff;
+        --border: #e8e0d5;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #d9c7b6;
+            --primary-soft: #2f2a25;
+            --accent: #edcf72;
+            --text: #d5cdc4;
+            --text-strong: #f4f0ea;
+            --text-secondary: #a79d93;
+            --background: #16150f;
+            --surface: #221f1b;
+            --border: #37322c;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 16px;
+        background: #bbada0;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 21px; font-weight: 800; letter-spacing: -0.5px; color: #f9f6f2;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 22px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="Langue">
+        <option value="../">English</option>
+        <option value="../zh-cn/">简体中文</option>
+        <option value="../zh-tw/">繁體中文</option>
+        <option value="../ja/">日本語</option>
+        <option value="" selected>Français</option>
+        <option value="../nl/">Nederlands</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">2048</div>
+        <h1>Politique de confidentialité de Super 2048</h1>
+        <p class="subtitle">Un jeu de puzzle de chiffres 2048 classique</p>
+    </div>
+
+    <div class="update-date">Dernière mise à jour : 13 septembre 2026</div>
+
+    <div class="toc">
+        <h2>Sommaire</h2>
+        <ol>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#data-collection">Informations collectées</a></li>
+            <li><a href="#data-use">Utilisation des informations</a></li>
+            <li><a href="#permissions">Autorisations de l'application</a></li>
+            <li><a href="#data-storage">Conservation et sécurité des données</a></li>
+            <li><a href="#third-party">Services tiers</a></li>
+            <li><a href="#ads">Publicité et vos choix</a></li>
+            <li><a href="#gdpr">Vos droits et le RGPD</a></li>
+            <li><a href="#children">Confidentialité des enfants</a></li>
+            <li><a href="#changes">Modifications de la politique</a></li>
+            <li><a href="#contact">Nous contacter</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. Introduction</h2>
+        <p>Super 2048 (ci-après « cette application ») est un jeu de puzzle de chiffres hors ligne pour Android. Vous faites glisser des tuiles sur une grille, fusionnez les nombres identiques et tentez d'atteindre des valeurs toujours plus élevées. L'application propose plusieurs tailles de grille, des thèmes, des modes de jeu et un classement en ligne facultatif.</p>
+        <p>Nous prenons votre vie privée au sérieux. Cette politique explique ce que l'application fait de vos informations, comment elles sont protégées et quels choix s'offrent à vous. En utilisant l'application, vous acceptez les pratiques décrites ci-dessous.</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. Informations collectées</h2>
+        <p>Le jeu lui-même <span class="highlight">ne collecte, ne transmet et ne stocke aucune de vos informations personnelles</span>, et il ne nécessite ni inscription ni connexion. Précisément :</p>
+        <ul>
+            <li><strong>Aucune donnée de compte.</strong> Nous ne demandons jamais votre nom, votre adresse e-mail, votre numéro de téléphone ni votre mot de passe.</li>
+            <li><strong>Aucun identifiant d'appareil.</strong> Nous ne collectons ni IMEI, ni Android ID, ni adresse MAC, ni aucun identifiant similaire.</li>
+            <li><strong>Aucune donnée de localisation.</strong> L'application ne demande pas l'autorisation de localisation et ne lit jamais votre position.</li>
+            <li><strong>Aucun outil d'analyse ni de suivi.</strong> L'application ne contient aucun SDK d'analyse et ne construit aucun profil d'utilisateur.</li>
+        </ul>
+        <p>Les seules données produites par l'application restent sur votre propre appareil :</p>
+        <ul>
+            <li>La progression du jeu, le score actuel, le meilleur score et les réglages (taille de grille, thème, son, animation, langue, mode nuit) sont enregistrés dans le stockage local de l'application.</li>
+            <li>Si vous définissez un arrière-plan personnalisé, l'image choisie est redimensionnée et copiée dans l'espace privé de l'application sur votre appareil.</li>
+            <li>Un fichier de sauvegarde n'est créé que lorsque vous appuyez explicitement sur <em>Sauvegarde</em>, et il est écrit à l'emplacement que vous choisissez.</li>
+        </ul>
+    </section>
+
+    <section id="data-use">
+        <h2>3. Utilisation des informations</h2>
+        <p>Comme nous ne collectons aucune information personnelle, il n'y a rien que nous puissions utiliser, vendre ou partager avec des tiers. Les données stockées sur votre appareil servent uniquement à :</p>
+        <ul>
+            <li>restaurer votre partie en cours à la prochaine ouverture de l'application ;</li>
+            <li>appliquer vos préférences, comme le thème, la taille de la grille, la langue et le mode nuit ;</li>
+            <li>afficher votre image d'arrière-plan personnalisée derrière le plateau.</li>
+        </ul>
+        <p>Vous pouvez effacer l'ensemble de ces données à tout moment en vidant les données de l'application dans les réglages du système, ou en désinstallant l'application.</p>
+    </section>
+
+    <section id="permissions">
+        <h2>4. Autorisations de l'application</h2>
+        <p>Super 2048 ne demande que deux autorisations, toutes deux liées aux composants de publicité et de classement :</p>
+        <ul>
+            <li><strong>INTERNET</strong> et <strong>ACCESS_NETWORK_STATE</strong> : nécessaires pour charger les publicités et communiquer avec Google Play Jeux lorsque vous choisissez de vous connecter pour le classement. Le jeu est entièrement jouable hors ligne.</li>
+        </ul>
+        <p>L'application ne demande <span class="highlight">aucune autorisation de stockage, de localisation, de caméra, de micro ou de contacts</span>. Le choix d'une image d'arrière-plan ou d'un fichier de sauvegarde se fait via le sélecteur de fichiers d'Android, qui n'accorde l'accès qu'à l'élément que vous sélectionnez.</p>
+        <p>Vous pouvez refuser ou révoquer ces autorisations à tout moment dans les réglages du système ; le jeu reste pleinement utilisable sans elles.</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>5. Conservation et sécurité des données</h2>
+        <p>Toutes les données de jeu sont conservées dans le répertoire privé de l'application sur votre appareil. Le bac à sable applicatif d'Android empêche les autres applications de les lire, et elles sont supprimées lorsque vous désinstallez l'application.</p>
+        <p>Nous n'exploitons aucun serveur et ne recevons donc jamais vos données de jeu. Si la sauvegarde système d'Android est activée sur votre appareil, vos données d'application peuvent être incluses dans la sauvegarde de votre propre compte Google ; vous pouvez la contrôler dans les réglages du système, et nous n'y avons aucun accès.</p>
+    </section>
+
+    <section id="third-party">
+        <h2>6. Services tiers</h2>
+        <p>L'application intègre les services suivants, fournis par Google :</p>
+        <ul>
+            <li><strong>Google AdMob</strong> : diffuse les bannières et les publicités interstitielles qui permettent de proposer le jeu gratuitement.</li>
+            <li><strong>Google Play Jeux</strong> : utilisé uniquement si vous choisissez de vous connecter, afin d'envoyer vos scores et d'afficher le classement.</li>
+        </ul>
+        <p>Ces services relèvent de la politique de confidentialité de Google, disponible à l'adresse <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. En dehors de ceux-ci, l'application n'intègre aucun SDK d'analyse, de suivi ou de réseau social.</p>
+    </section>
+
+    <section id="ads">
+        <h2>7. Publicité et vos choix</h2>
+        <p>Super 2048 est gratuit et financé par la publicité : l'application affiche donc des bannières et des publicités interstitielles diffusées par Google AdMob. Pour sélectionner, diffuser et mesurer les publicités, AdMob peut collecter des informations telles que votre identifiant publicitaire, le modèle de votre appareil et votre région approximative.</p>
+        <ul>
+            <li>Nous, les développeurs, ne recevons jamais vos données personnelles de la part d'AdMob ; nous ne voyons que des rapports de revenus agrégés.</li>
+            <li>Vous pouvez à tout moment <strong>réinitialiser ou supprimer votre identifiant publicitaire</strong> et <strong>désactiver la personnalisation des annonces</strong> dans Paramètres Android &rarr; Confidentialité &rarr; Annonces.</li>
+            <li>Lorsque la loi l'exige, la personnalisation des annonces dépend des choix de consentement gérés par les outils publicitaires de Google ; vous pouvez les consulter ou les modifier à tout moment.</li>
+        </ul>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. Vos droits et le RGPD</h2>
+        <p>Conformément au Règlement général sur la protection des données (RGPD) de l'Union européenne et aux lois similaires, nous confirmons ce qui suit :</p>
+        <ul>
+            <li><strong>Responsable du traitement.</strong> Le développeur de Super 2048 est le responsable du traitement. Comme le jeu ne collecte pas de données personnelles sur nos propres systèmes, il n'existe aucun registre de données personnelles que nous devrions gérer.</li>
+            <li><strong>Base légale.</strong> Le jeu ne traite lui-même aucune donnée personnelle ; aucune base légale au titre de l'article 6 n'est donc requise. Le traitement lié à la publicité est effectué par Google comme décrit ci-dessus.</li>
+            <li><strong>Vos droits.</strong> Même si nous ne détenons aucune donnée personnelle, vous conservez tous vos droits, notamment l'accès, la rectification, l'effacement, la limitation du traitement, la portabilité et l'opposition.</li>
+            <li><strong>Données publicitaires.</strong> Pour exercer ces droits sur les données publicitaires, utilisez les contrôles de confidentialité de Google : <a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>.</li>
+            <li><strong>Réclamations.</strong> Vous avez le droit d'introduire une réclamation auprès de votre autorité locale de protection des données.</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. Confidentialité des enfants</h2>
+        <p>Super 2048 est un jeu de puzzle destiné au grand public et non aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants et, comme l'application ne collecte aucune donnée personnelle, nous ne détenons aucune donnée concernant des enfants.</p>
+        <p>Si vous êtes parent ou tuteur et que la publicité affichée dans l'application vous préoccupe, vous pouvez désactiver la personnalisation des annonces dans les réglages du système comme indiqué ci-dessus. Si vous pensez qu'un enfant nous a transmis des informations, contactez-nous et nous agirons rapidement.</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. Modifications de la politique</h2>
+        <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. La nouvelle version sera toujours publiée sur cette page avec une date de « Dernière mise à jour » actualisée, et les changements importants seront également signalés dans l'application. Continuer à utiliser l'application après une mise à jour vaut acceptation de la politique révisée.</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. Nous contacter</h2>
+        <p>Si vous avez des questions ou des suggestions concernant cette politique de confidentialité ou l'application, contactez-nous à :</p>
+        <ul>
+            <li>E-mail : android.bolong@gmail.com</li>
+        </ul>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 Super 2048. Tous droits réservés.</p>
+    </div>
+</div>
+</body>
+</html>

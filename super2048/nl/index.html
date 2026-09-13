@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacybeleid van Super 2048</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/super2048/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://bolong-mob.github.io/privacy-policy/super2048/zh-tw/">
+<link rel="alternate" hreflang="ja" href="https://bolong-mob.github.io/privacy-policy/super2048/ja/">
+<link rel="alternate" hreflang="fr" href="https://bolong-mob.github.io/privacy-policy/super2048/fr/">
+<link rel="alternate" hreflang="nl" href="https://bolong-mob.github.io/privacy-policy/super2048/nl/">
+<style>
+    :root {
+        --primary: #8f7a66;
+        --primary-soft: #f2eae2;
+        --accent: #edcf72;
+        --text: #776e65;
+        --text-strong: #453e38;
+        --text-secondary: #9a8f86;
+        --background: #faf8ef;
+        --surface: #ffffff;
+        --border: #e8e0d5;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #d9c7b6;
+            --primary-soft: #2f2a25;
+            --accent: #edcf72;
+            --text: #d5cdc4;
+            --text-strong: #f4f0ea;
+            --text-secondary: #a79d93;
+            --background: #16150f;
+            --surface: #221f1b;
+            --border: #37322c;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 16px;
+        background: #bbada0;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 21px; font-weight: 800; letter-spacing: -0.5px; color: #f9f6f2;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 22px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="Taal">
+        <option value="../">English</option>
+        <option value="../zh-cn/">简体中文</option>
+        <option value="../zh-tw/">繁體中文</option>
+        <option value="../ja/">日本語</option>
+        <option value="../fr/">Français</option>
+        <option value="" selected>Nederlands</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">2048</div>
+        <h1>Privacybeleid van Super 2048</h1>
+        <p class="subtitle">Een klassieke 2048-cijferpuzzel</p>
+    </div>
+
+    <div class="update-date">Laatst bijgewerkt: 13 september 2026</div>
+
+    <div class="toc">
+        <h2>Inhoud</h2>
+        <ol>
+            <li><a href="#intro">Inleiding</a></li>
+            <li><a href="#data-collection">Welke gegevens wij verzamelen</a></li>
+            <li><a href="#data-use">Hoe wij gegevens gebruiken</a></li>
+            <li><a href="#permissions">App-machtigingen</a></li>
+            <li><a href="#data-storage">Opslag en beveiliging van gegevens</a></li>
+            <li><a href="#third-party">Diensten van derden</a></li>
+            <li><a href="#ads">Advertenties en uw keuzes</a></li>
+            <li><a href="#gdpr">Uw rechten en de AVG</a></li>
+            <li><a href="#children">Privacy van kinderen</a></li>
+            <li><a href="#changes">Wijzigingen in dit beleid</a></li>
+            <li><a href="#contact">Contact opnemen</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. Inleiding</h2>
+        <p>Super 2048 (hierna "deze app") is een offline cijferpuzzel voor Android. U schuift tegels over een raster, voegt gelijke getallen samen en probeert steeds hogere waarden te bereiken. De app biedt meerdere rastergroottes, thema's, speelmodi en een optionele online ranglijst.</p>
+        <p>Wij nemen uw privacy serieus. Dit beleid legt uit wat de app met uw gegevens doet, hoe die gegevens worden beschermd en welke keuzes u heeft. Door de app te gebruiken, stemt u in met de hieronder beschreven werkwijze.</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. Welke gegevens wij verzamelen</h2>
+        <p>De game zelf <span class="highlight">verzamelt, verstuurt en bewaart uw persoonsgegevens niet</span> en vereist geen registratie of inloggen. Concreet:</p>
+        <ul>
+            <li><strong>Geen accountgegevens.</strong> Wij vragen nooit om uw naam, e-mailadres, telefoonnummer of wachtwoord.</li>
+            <li><strong>Geen apparaat-ID's.</strong> Wij verzamelen geen IMEI, Android ID, MAC-adres of vergelijkbare identificatoren.</li>
+            <li><strong>Geen locatiegegevens.</strong> De app vraagt geen locatiemachtiging en leest uw locatie nooit uit.</li>
+            <li><strong>Geen analyse of tracking.</strong> De app bevat geen analytics-SDK en bouwt op geen enkele manier gebruikersprofielen op.</li>
+        </ul>
+        <p>De enige gegevens die de app produceert, blijven op uw eigen apparaat:</p>
+        <ul>
+            <li>Spelvoortgang, huidige score, beste score en instellingen (rastergrootte, thema, geluid, animatie, taal, nachtmodus) worden opgeslagen in de lokale opslag van de app.</li>
+            <li>Als u een aangepaste achtergrond instelt, wordt de gekozen afbeelding geschaald en gekopieerd naar de privé-opslag van de app op uw apparaat.</li>
+            <li>Een back-upbestand wordt alleen gemaakt wanneer u zelf op <em>Back-up</em> tikt, en wordt geschreven naar de locatie die u kiest.</li>
+        </ul>
+    </section>
+
+    <section id="data-use">
+        <h2>3. Hoe wij gegevens gebruiken</h2>
+        <p>Omdat wij geen persoonsgegevens verzamelen, valt er niets te gebruiken, te verkopen of met derden te delen. De gegevens op uw apparaat worden uitsluitend gebruikt om:</p>
+        <ul>
+            <li>uw spelvoortgang te herstellen wanneer u de app opnieuw opent;</li>
+            <li>uw voorkeuren toe te passen, zoals thema, rastergrootte, taal en nachtmodus;</li>
+            <li>uw aangepaste achtergrondafbeelding achter het speelveld te tonen.</li>
+        </ul>
+        <p>U kunt al deze gegevens op elk moment wissen door de app-gegevens in de systeeminstellingen te legen of de app te verwijderen.</p>
+    </section>
+
+    <section id="permissions">
+        <h2>4. App-machtigingen</h2>
+        <p>Super 2048 vraagt slechts twee machtigingen aan, beide afkomstig van de advertentie- en ranglijstonderdelen:</p>
+        <ul>
+            <li><strong>INTERNET</strong> en <strong>ACCESS_NETWORK_STATE</strong>: nodig om advertenties te laden en om met Google Play Games te communiceren wanneer u ervoor kiest in te loggen voor de ranglijst. De game zelf is volledig offline speelbaar.</li>
+        </ul>
+        <p>De app vraagt <span class="highlight">geen machtigingen voor opslag, locatie, camera, microfoon of contacten</span>. Het kiezen van een achtergrondafbeelding of back-upbestand gebeurt via de bestandskiezer van Android, die alleen toegang geeft tot het item dat u selecteert.</p>
+        <p>U kunt machtigingen op elk moment weigeren of intrekken in de systeeminstellingen; de game blijft zonder deze machtigingen volledig speelbaar.</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>5. Opslag en beveiliging van gegevens</h2>
+        <p>Alle spelgegevens staan in de privémap van de app op uw apparaat. De applicatie-sandbox van Android voorkomt dat andere apps ze kunnen lezen, en ze worden verwijderd wanneer u de app verwijdert.</p>
+        <p>Wij beheren geen servers en ontvangen of verwerken uw spelgegevens dus nooit. Als de systeemback-up van Android op uw apparaat is ingeschakeld, kunnen uw app-gegevens worden opgenomen in de back-up van uw eigen Google-account; u kunt dit beheren in de systeeminstellingen en wij hebben er geen toegang toe.</p>
+    </section>
+
+    <section id="third-party">
+        <h2>6. Diensten van derden</h2>
+        <p>De app integreert de volgende diensten, die door Google worden geleverd:</p>
+        <ul>
+            <li><strong>Google AdMob</strong>: levert de banner- en interstitial-advertenties waarmee de game gratis kan blijven.</li>
+            <li><strong>Google Play Games</strong>: alleen gebruikt als u ervoor kiest in te loggen, om uw scores te versturen en de ranglijst te tonen.</li>
+        </ul>
+        <p>Deze diensten vallen onder het privacybeleid van Google, te vinden op <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. Daarnaast integreert de app geen enkele analytics-, tracking- of socialmedia-SDK.</p>
+    </section>
+
+    <section id="ads">
+        <h2>7. Advertenties en uw keuzes</h2>
+        <p>Super 2048 is gratis en wordt betaald uit advertenties. De app toont daarom banner- en interstitial-advertenties van Google AdMob. Om advertenties te selecteren, te tonen en de resultaten te meten, kan AdMob gegevens verzamelen zoals uw advertentie-ID, het model van uw apparaat en uw globale regio.</p>
+        <ul>
+            <li>Wij, de ontwikkelaars, ontvangen uw persoonsgegevens nooit van AdMob; wij zien alleen samengevatte omzetrapporten.</li>
+            <li>U kunt op elk moment <strong>uw advertentie-ID opnieuw instellen of verwijderen</strong> en <strong>advertentiepersonalisatie uitschakelen</strong> via Android-instellingen &rarr; Privacy &rarr; Advertenties.</li>
+            <li>Waar de wet dat vereist, is advertentiepersonalisatie afhankelijk van de toestemmingskeuzes die via Google's advertentietools worden beheerd; u kunt die keuzes altijd bekijken of wijzigen.</li>
+        </ul>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. Uw rechten en de AVG</h2>
+        <p>In overeenstemming met de Algemene verordening gegevensbescherming (AVG/GDPR) van de EU en vergelijkbare wetgeving bevestigen wij het volgende:</p>
+        <ul>
+            <li><strong>Verwerkingsverantwoordelijke.</strong> De ontwikkelaar van Super 2048 is de verwerkingsverantwoordelijke. Omdat de game geen persoonsgegevens op onze eigen systemen verzamelt, bestaat er geen persoonsgegevensregister dat wij beheren.</li>
+            <li><strong>Rechtsgrondslag.</strong> De game verwerkt zelf geen persoonsgegevens, dus is er geen rechtsgrondslag op grond van artikel 6 nodig. Verwerking met betrekking tot advertenties wordt uitgevoerd door Google, zoals hierboven beschreven.</li>
+            <li><strong>Uw rechten.</strong> Ook al bewaren wij geen persoonsgegevens, u behoudt al uw rechten, waaronder inzage, correctie, verwijdering, beperking van de verwerking, overdraagbaarheid en bezwaar.</li>
+            <li><strong>Advertentiegegevens.</strong> Om deze rechten met betrekking tot advertentiegegevens uit te oefenen, kunt u de privacy-instellingen van Google gebruiken: <a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>.</li>
+            <li><strong>Klachten.</strong> U heeft het recht een klacht in te dienen bij de gegevensbeschermingsautoriteit in uw land.</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. Privacy van kinderen</h2>
+        <p>Super 2048 is een puzzelgame voor een breed publiek en niet gericht op kinderen onder de 13 jaar. Wij verzamelen niet bewust persoonsgegevens van kinderen en, omdat de app helemaal geen persoonsgegevens verzamelt, hebben wij geen gegevens van kinderen in beheer.</p>
+        <p>Bent u ouder of voogd en heeft u vragen over de advertenties in de app, dan kunt u advertentiepersonalisatie uitschakelen via de systeeminstellingen, zoals hierboven beschreven. Als u vermoedt dat een kind ons gegevens heeft verstrekt, neem dan contact met ons op; wij handelen dan direct.</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. Wijzigingen in dit beleid</h2>
+        <p>Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Een nieuwe versie wordt altijd op deze pagina gepubliceerd met een bijgewerkte datum van "Laatst bijgewerkt", en belangrijke wijzigingen worden ook in de app gemeld. Als u de app na een update blijft gebruiken, accepteert u het herziene beleid.</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. Contact opnemen</h2>
+        <p>Als u vragen of suggesties heeft over dit privacybeleid of over de app, neem dan contact met ons op via:</p>
+        <ul>
+            <li>E-mail: android.bolong@gmail.com</li>
+        </ul>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 Super 2048. Alle rechten voorbehouden.</p>
+    </div>
+</div>
+</body>
+</html>
