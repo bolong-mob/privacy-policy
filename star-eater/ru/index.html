@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности Star Eater</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/star-eater/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/star-eater/zh-cn/">
+<link rel="alternate" hreflang="es" href="https://bolong-mob.github.io/privacy-policy/star-eater/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://bolong-mob.github.io/privacy-policy/star-eater/pt/">
+<link rel="alternate" hreflang="ja" href="https://bolong-mob.github.io/privacy-policy/star-eater/ja/">
+<link rel="alternate" hreflang="ko" href="https://bolong-mob.github.io/privacy-policy/star-eater/ko/">
+<link rel="alternate" hreflang="de" href="https://bolong-mob.github.io/privacy-policy/star-eater/de/">
+<link rel="alternate" hreflang="ru" href="https://bolong-mob.github.io/privacy-policy/star-eater/ru/">
+<link rel="alternate" hreflang="fr" href="https://bolong-mob.github.io/privacy-policy/star-eater/fr/">
+<link rel="alternate" hreflang="tr" href="https://bolong-mob.github.io/privacy-policy/star-eater/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bolong-mob.github.io/privacy-policy/star-eater/">
+<style>
+    :root {
+        --primary: #54c6eb;
+        --primary-soft: #0f2330;
+        --accent: #f5a623;
+        --cosmic: #a463f2;
+        --text: #b9c4d6;
+        --text-strong: #e7edf8;
+        --text-secondary: #7d8ca6;
+        --background: #04070d;
+        --surface: #0d1322;
+        --border: #1e2740;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: light) {
+        :root {
+            --primary: #0f7fa8;
+            --primary-soft: #e6f6fb;
+            --accent: #b5720a;
+            --cosmic: #7a3fd0;
+            --text: #435061;
+            --text-strong: #101725;
+            --text-secondary: #6b7789;
+            --background: #f6f8fc;
+            --surface: #ffffff;
+            --border: #e2e8f2;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 50%;
+        background: radial-gradient(circle at 50% 50%, #000 0 18%, var(--cosmic) 19% 30%, #0b1020 31% 100%);
+        box-shadow: 0 0 0 1px var(--border), 0 0 28px -6px var(--cosmic);
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 22px; font-weight: 800; letter-spacing: -0.5px; color: var(--text-strong);
+    }
+    .header h1 { font-size: 28px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 24px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="Language">
+        <option value="">English</option>
+        <option value="../zh-cn/">简体中文</option>
+        <option value="../es/">Español</option>
+        <option value="../pt/">Português (Brasil)</option>
+        <option value="../ja/">日本語</option>
+        <option value="../ko/">한국어</option>
+        <option value="../de/">Deutsch</option>
+        <option value="../ru/" selected>Русский</option>
+        <option value="../fr/">Français</option>
+        <option value="../tr/">Türkçe</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">SE</div>
+        <h1>Политика конфиденциальности Star Eater</h1>
+        <p class="subtitle">Офлайн-аркада о чёрной дыре, пожирающей космос</p>
+    </div>
+
+    <div class="update-date">Последнее обновление: 13 сентября 2026 г.</div>
+
+    <div class="toc">
+        <h2>Содержание</h2>
+        <ol>
+            <li><a href="#intro">Введение</a></li>
+            <li><a href="#data-collection">Какие данные мы собираем</a></li>
+            <li><a href="#data-use">Как мы используем данные</a></li>
+            <li><a href="#permissions">Разрешения приложения</a></li>
+            <li><a href="#data-storage">Хранение и защита данных</a></li>
+            <li><a href="#third-party">Сторонние сервисы</a></li>
+            <li><a href="#ads">Реклама и твой выбор</a></li>
+            <li><a href="#gdpr">Твои права и GDPR</a></li>
+            <li><a href="#children">Конфиденциальность детей</a></li>
+            <li><a href="#changes">Изменения политики</a></li>
+            <li><a href="#contact">Связь с нами</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. Введение</h2>
+        <p>Star Eater (далее — «это приложение») — офлайн-аркада для Android. Ты управляешь чёрной дырой в восьми звёздных регионах, пожираешь астероиды, планеты, газовые гиганты, звёзды и чёрные дыры-соперницы и растёшь достаточно, чтобы достичь целевой массы до того, как закончится таймер матча.</p>
+        <p>Игра выпускается в двух изданиях, которые различаются способом финансирования:</p>
+        <ul>
+            <li><strong>Star Eater</strong> &ndash; бесплатное издание (имя пакета <span class="highlight">com.starteater.game</span>). Оно поддерживается за счёт рекламы и показывает видео за вознаграждение и межстраничные объявления.</li>
+            <li><strong>Star Eater: Cosmos Edition</strong> &ndash; платное издание (имя пакета <span class="highlight">com.starteater.game.cosmos</span>). Оно вообще не содержит рекламного кода.</li>
+        </ul>
+        <p>Мы серьёзно относимся к твоей конфиденциальности. В этой политике объясняется, что приложение делает с твоими данными, как эти данные защищаются и какой выбор у тебя есть. Используя приложение, ты соглашаешься с описанными ниже практиками.</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. Какие данные мы собираем</h2>
+        <p>Сама игра <span class="highlight">не собирает, не загружает и не хранит твою личную информацию</span>, и она не требует регистрации или входа. В частности:</p>
+        <ul>
+            <li><strong>Никаких данных учётной записи.</strong> Мы никогда не запрашиваем твоё имя, адрес электронной почты, номер телефона или пароль.</li>
+            <li><strong>Никаких идентификаторов устройства, собираемых нами.</strong> Мы не собираем IMEI, Android ID, MAC-адрес или подобные идентификаторы для себя.</li>
+            <li><strong>Никаких данных о местоположении.</strong> Приложение не запрашивает разрешение на геолокацию и никогда не считывает твоё местоположение.</li>
+            <li><strong>Никакой собственной аналитики или отслеживания.</strong> Приложение не содержит аналитических SDK и не создаёт профили пользователей.</li>
+            <li><strong>Никакого доступа к твоим файлам, камере, микрофону или контактам.</strong> Приложение никогда не запрашивает эти разрешения.</li>
+        </ul>
+        <p>Единственные данные, которые создаёт приложение, остаются на твоём собственном устройстве:</p>
+        <ul>
+            <li>Игровой прогресс: твой уровень, опыт, звёздная пыль, энергия и время её восстановления, завершение регионов и звёздные рейтинги, разблокированные записи кодекса, имеющиеся и надетые скины, а также прогресс «Звёздного пропуска».</li>
+            <li>Твои настройки: громкость музыки и звуковых эффектов, качество графики и плотность эффектов, режим для дальтоников, режим высокой контрастности, масштаб текста, экономия заряда батареи и выбранный тобой язык интерфейса.</li>
+            <li>Ежедневные счётчики и отметки времени, используемые для соблюдения ограничений частоты рекламы, описанных в разделе 7.</li>
+            <li>Запись «призрака» твоего последнего забега &ndash; отображаемое имя, установленное в игре в данный момент, твоя итоговая масса, полученный рейтинг и короткая серия измерений массы с течением времени. Эта запись используется только для того, чтобы ты мог соревноваться со своим же предыдущим забегом в более позднем матче. Она никогда не покидает твоё устройство.</li>
+        </ul>
+    </section>
+
+    <section id="data-use">
+        <h2>3. Как мы используем данные</h2>
+        <p>Поскольку мы не собираем личную информацию, нам нечего использовать, продавать или передавать третьим лицам. Данные, хранящиеся на твоём устройстве, используются исключительно для того, чтобы:</p>
+        <ul>
+            <li>восстановить твой прогресс, энергию и разблокировки при следующем открытии приложения;</li>
+            <li>применять твои предпочтения, такие как язык, звук, качество графики и настройки доступности;</li>
+            <li>соблюдать ежедневные лимиты и интервалы между показами рекламы, чтобы игра никогда не была перегружена объявлениями;</li>
+            <li>воспроизводить твой собственный предыдущий забег в качестве соперника-«призрака» внутри игры.</li>
+        </ul>
+        <p>Ты можешь стереть всё это в любой момент, очистив данные приложения в системных настройках или удалив приложение.</p>
+    </section>
+
+    <section id="permissions">
+        <h2>4. Разрешения приложения</h2>
+        <p><strong>Star Eater: Cosmos Edition</strong> полностью работает офлайн и не запрашивает <span class="highlight">вообще никаких разрешений</span>.</p>
+        <p>Бесплатное издание запрашивает только разрешения, необходимые Google AdMob для загрузки и измерения рекламы:</p>
+        <ul>
+            <li><strong>INTERNET</strong> &ndash; для загрузки рекламы.</li>
+            <li><strong>ACCESS_NETWORK_STATE</strong> &ndash; для проверки наличия соединения перед запросом рекламы, чтобы игра не зависала, когда ты офлайн.</li>
+            <li><strong>com.google.android.gms.permission.AD_ID</strong> &ndash; разрешение на рекламный идентификатор, используемое Google AdMob для подбора, доставки и измерения рекламы.</li>
+        </ul>
+        <p>Ни одно из изданий не запрашивает <span class="highlight">разрешения на доступ к хранилищу, геолокации, камере, микрофону, контактам или телефону</span>. Основная игра полностью доступна офлайн; без подключения к сети недоступны только необязательные видеоролики за вознаграждение и межстраничные объявления.</p>
+        <p>Ты можешь в любой момент просмотреть или отозвать разрешения в системных настройках Android.</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>5. Хранение и защита данных</h2>
+        <p>Все игровые данные хранятся в приватной папке приложения на твоём устройстве. Песочница приложений Android не позволяет другим приложениям читать их, и они удаляются при удалении приложения.</p>
+        <p>Мы не обслуживаем никаких серверов и поэтому никогда не получаем, не храним и не обрабатываем твои игровые данные. Если на твоём устройстве включено системное резервное копирование Android, данные твоего приложения могут попасть в резервную копию твоей учётной записи Google; ты можешь управлять этим в системных настройках, и у нас нет к ним доступа.</p>
+    </section>
+
+    <section id="third-party">
+        <h2>6. Сторонние сервисы</h2>
+        <p>Приложение интегрирует следующие сервисы, предоставляемые Google, которые используются только там, где это описано:</p>
+        <ul>
+            <li><strong>Google AdMob</strong> &ndash; показ видеороликов за вознаграждение и межстраничных объявлений в бесплатном издании. Издание Cosmos не включает этот компонент.</li>
+            <li><strong>Google User Messaging Platform (UMP)</strong> &ndash; используется в бесплатном издании для запроса и хранения твоего согласия на рекламу там, где этого требует закон, например в Европейской экономической зоне, Великобритании и Швейцарии.</li>
+            <li><strong>Google Play</strong> &ndash; распространяет приложение, обрабатывает покупку издания Cosmos и, где это доступно, любые покупки внутри приложения. Оплата полностью обрабатывается Google; мы никогда не получаем и не храним твои платёжные данные.</li>
+        </ul>
+        <p>Эти сервисы работают в соответствии с собственной политикой конфиденциальности Google, доступной по адресу <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. Помимо них, приложение не интегрирует никаких аналитических SDK, SDK отслеживания или социальных сетей.</p>
+    </section>
+
+    <section id="ads">
+        <h2>7. Реклама и твой выбор</h2>
+        <p>Бесплатное издание финансируется за счёт рекламы. Используются два формата, и оба намеренно сдержанны:</p>
+        <ul>
+            <li><strong>Видео за вознаграждение</strong> &ndash; показывается только тогда, когда ты сам решаешь его посмотреть, чтобы получить дополнительную награду, например продолжить забег, удвоить заработанную звёздную пыль или пополнить энергию. Тебя никогда не заставляют его смотреть.</li>
+            <li><strong>Межстраничное объявление</strong> &ndash; показывается только в естественной паузе между матчами, не более двух раз в день и не чаще одного раза в десять минут.</li>
+        </ul>
+        <p>Чтобы подбирать, доставлять и измерять рекламу, AdMob может собирать информацию, такую как твой рекламный идентификатор, модель устройства и приблизительный регион. Мы, разработчики, никогда не получаем твои личные данные от AdMob; мы видим только сводные отчёты о доходах, которые не содержат информации об отдельных пользователях.</p>
+        <ul>
+            <li>Ты можешь в любой момент <strong>сбросить или удалить свой рекламный идентификатор</strong> и <strong>отключить персонализацию рекламы</strong> в Настройках Android &rarr; Конфиденциальность &rarr; Реклама.</li>
+            <li>Там, где этого требует закон, персонализация рекламы зависит от выбора согласия, собранного через инструменты согласия Google; ты можешь в любой момент просмотреть или изменить этот выбор.</li>
+            <li>Отключение рекламы внутри бесплатного издания или использование издания Cosmos означает, что реклама вообще не запрашивается и не показывается.</li>
+        </ul>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. Твои права и GDPR</h2>
+        <p>В соответствии с Общим регламентом ЕС по защите данных (GDPR), GDPR Великобритании и аналогичными законами мы подтверждаем следующее:</p>
+        <ul>
+            <li><strong>Оператор данных.</strong> Разработчик Star Eater является оператором данных. Поскольку игра не собирает персональные данные в наших собственных системах, у нас нет записи персональных данных, которой мы могли бы управлять.</li>
+            <li><strong>Правовое основание.</strong> Сама игра не обрабатывает персональные данные, поэтому для неё не требуется правовое основание по статье 6. Обработка, связанная с рекламой, осуществляется Google, как описано выше, и там, где требуется согласие, оно собирается через инструменты согласия Google до запроса любой персонализированной рекламы.</li>
+            <li><strong>Твои права.</strong> Даже несмотря на то, что мы не храним персональные данные, за тобой сохраняются все твои права, включая доступ, исправление, удаление, ограничение обработки, переносимость данных и возражение.</li>
+            <li><strong>Данные о рекламе.</strong> Чтобы воспользоваться этими правами в отношении данных о рекламе, используй средства управления конфиденциальностью Google по адресу <a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>.</li>
+            <li><strong>Калифорния и другие штаты США.</strong> Мы не продаём и не передаём личную информацию в том смысле, в каком эти термины определены в CCPA/CPRA. Игровые данные никогда не покидают твоё устройство, и мы не храним никакой личной информации о тебе.</li>
+            <li><strong>Жалобы.</strong> Ты имеешь право подать жалобу в местный орган по защите данных.</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. Конфиденциальность детей</h2>
+        <p>Star Eater — аркада, подходящая для широкой аудитории, и она не предназначена для детей младше 13 лет (или минимального возраста, установленного в твоей стране). Мы сознательно не собираем личную информацию от детей, и поскольку приложение вообще не собирает персональные данные, у нас нет детских данных, которые мы могли бы хранить.</p>
+        <p>Если ты родитель или опекун и у тебя есть опасения по поводу рекламы, показываемой в бесплатном издании, ты можешь выбрать издание Cosmos без рекламы или отключить персонализацию рекламы в системных настройках, как описано выше. Если ты считаешь, что ребёнок предоставил нам информацию, свяжись с нами, и мы незамедлительно примем меры.</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. Изменения политики</h2>
+        <p>Мы можем время от времени обновлять эту политику конфиденциальности. Новая версия всегда будет публиковаться на этой странице с обновлённой датой «Последнее обновление», а о значительных изменениях также будет сообщаться внутри приложения. Продолжение использования приложения после обновления означает, что ты принимаешь пересмотренную политику.</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. Связь с нами</h2>
+        <p>Если у тебя есть вопросы или предложения по поводу этой политики конфиденциальности или приложения, свяжись с нами:</p>
+        <ul>
+            <li>Электронная почта: android.bolong@gmail.com</li>
+        </ul>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 Star Eater. Все права защищены.</p>
+    </div>
+</div>
+</body>
+</html>
