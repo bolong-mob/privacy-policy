@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D BLOCK 隐私政策</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/3dblock/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/3dblock/zh-cn/">
+<style>
+    :root {
+        --primary: #a8822f;
+        --primary-soft: #f4ecd8;
+        --accent: #d4af37;
+        --text: #6f6552;
+        --text-strong: #3d3527;
+        --text-secondary: #9a8f7d;
+        --background: #faf8f1;
+        --surface: #ffffff;
+        --border: #e8e0cf;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #e0c074;
+            --primary-soft: #2f2a20;
+            --accent: #d4af37;
+            --text: #d5ccba;
+            --text-strong: #f4efe2;
+            --text-secondary: #a79d89;
+            --background: #14130e;
+            --surface: #211e17;
+            --border: #383327;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 16px;
+        background: linear-gradient(145deg, #e3c15d, #a8822f);
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 24px; font-weight: 800; letter-spacing: -0.5px; color: #fffdf5;
+    }
+    .header h1 { font-size: 28px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 24px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="语言">
+        <option value="../">English</option>
+        <option value="" selected>简体中文</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">3D</div>
+        <h1>3D BLOCK 隐私政策</h1>
+        <p class="subtitle">金属圆柱方块消除益智游戏</p>
+    </div>
+
+    <div class="update-date">最后更新：2026 年 10 月 13 日</div>
+
+    <div class="toc">
+        <h2>目录</h2>
+        <ol>
+            <li><a href="#intro">简介</a></li>
+            <li><a href="#data-collection">我们收集的信息</a></li>
+            <li><a href="#data-use">信息的使用方式</a></li>
+            <li><a href="#iap">应用内购买</a></li>
+            <li><a href="#permissions">应用权限</a></li>
+            <li><a href="#data-storage">数据存储与安全</a></li>
+            <li><a href="#third-party">第三方服务</a></li>
+            <li><a href="#gdpr">您的权利与 GDPR</a></li>
+            <li><a href="#children">儿童隐私</a></li>
+            <li><a href="#changes">政策更新</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. 简介</h2>
+        <p>3D BLOCK（以下简称"本应用"或"我们"）是一款 Android 平台的 3D 方块益智游戏。方块朝可旋转的金属圆柱塔下落，您通过转动塔身、放置方块，填满完整的一圈即可将其爆裂消除。本应用提供两种游戏模式、多款金属皮肤、可选的辅助功能以及一项可选的一次性高级版升级。</p>
+        <p>我们相信隐私应当简单明了。本政策说明本应用如何处理信息、如何保护这些信息，以及您拥有哪些选择。使用本应用即表示您同意以下做法。</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. 我们收集的信息</h2>
+        <p>本应用<span class="highlight">不会在我们运营的任何服务器上收集、上传或存储您的个人信息</span>，也无需注册或登录。具体而言：</p>
+        <ul>
+            <li><strong>不收集账号信息。</strong>我们绝不会索取您的姓名、邮箱、电话号码或密码。</li>
+            <li><strong>不收集设备标识。</strong>我们不收集 IMEI、Android ID、MAC 地址或广告标识符。</li>
+            <li><strong>不收集位置信息。</strong>本应用不申请定位权限，也不会读取您的位置。</li>
+            <li><strong>不含统计、追踪或广告 SDK。</strong>本应用不包含任何统计或广告软件，也不会建立任何形式的用户画像。</li>
+        </ul>
+        <p>本应用产生的全部数据都保留在您自己的设备上：</p>
+        <ul>
+            <li>游戏进度、分数、最高分、所选皮肤、语言、音效/震动与画质等偏好设置保存在应用的本地存储中。</li>
+            <li>您的高级版购买权益记录在本机，并通过 Google Play 服务进行校验。</li>
+        </ul>
+    </section>
+
+    <section id="data-use">
+        <h2>3. 信息的使用方式</h2>
+        <p>由于我们不收集个人信息，因此不存在使用、出售或与第三方共享任何个人信息的情况。设备上保存的数据仅用于：</p>
+        <ul>
+            <li>下次打开应用时恢复您的游戏、分数以及辅助功能的每日可用次数；</li>
+            <li>应用您的偏好设置，例如皮肤、语言、音效、震动、画质与操控方式；</li>
+            <li>记住您是否已购买高级版。</li>
+        </ul>
+        <p>您主动选择发送的信息：</p>
+        <ul>
+            <li><strong>反馈邮件：</strong>点击"反馈"会调起您设备上自己的邮件应用，收件人已预填我们的支持邮箱。是否发送、写什么内容完全由您决定，我们仅用收到的邮件回复您。</li>
+            <li><strong>分享：</strong>分享功能会在您的设备上保存一张截图，并交由您选择的应用进行分享；我们不会接收或上传该截图。</li>
+        </ul>
+        <p>您可以随时在系统设置中清除应用数据，或卸载本应用，从而删除全部本地数据。</p>
+    </section>
+
+    <section id="iap">
+        <h2>4. 应用内购买</h2>
+        <p>本应用提供一项可选的一次性高级版升级，购买后永久解锁不限次数的时停功能与自动玩辅助。购买完全通过 <strong>Google Play 支付（Google Play Billing）</strong>完成。我们无法看到也不会存储您的银行卡号、账单地址等支付信息，这些均由 Google 处理。</p>
+        <p>所有游戏模式与核心功能无需购买即可正常游玩，辅助功能也支持免费试用。购买通过 Google Play 服务校验，权益保存在您的设备上；您可以使用"恢复购买"选项在同一 Google 账号下恢复该权益。</p>
+    </section>
+
+    <section id="permissions">
+        <h2>5. 应用权限</h2>
+        <p>本应用仅申请以下权限：</p>
+        <ul>
+            <li><strong>INTERNET / 网络访问：</strong>用于 Google Play 应用内购买校验，以及打开商店、隐私政策或反馈链接。游戏本身完全支持离线游玩。</li>
+            <li><strong>VIBRATE / 震动：</strong>用于可选的震动反馈，您可以随时在设置中关闭。</li>
+        </ul>
+        <p>本应用<span class="highlight">不申请存储、定位、相机、麦克风、通讯录、短信或通话记录权限</span>，也不会读取您的照片或文件。</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>6. 数据存储与安全</h2>
+        <p>所有游戏数据都保存在您设备上本应用的私有存储中。Android 的应用沙箱机制可防止其它应用读取这些数据，卸载本应用时数据会被一并删除。</p>
+        <p>我们不运营任何游戏服务器，因此不会接收、存储或处理您的游戏数据。与 Google Play 之间的购买校验通信由 Google 采用传输加密保护。如果您的设备启用了 Android 系统备份，应用数据可能被包含在您自己的 Google 账号备份中；您可以在系统设置中控制该功能，我们也无法访问这些数据。</p>
+    </section>
+
+    <section id="third-party">
+        <h2>7. 第三方服务</h2>
+        <p>本应用唯一对接的第三方服务是 <strong>Google Play</strong>（应用分发与应用内支付）。由 Google 处理的信息受 Google 自身隐私政策约束，详见 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>。</p>
+        <p>本应用不集成任何广告、统计、崩溃上报、追踪或社交类 SDK。</p>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. 您的权利与 GDPR</h2>
+        <p>依据欧盟《通用数据保护条例》（GDPR）及类似法律，我们作出如下说明：</p>
+        <ul>
+            <li><strong>数据控制者。</strong>3D BLOCK 的开发者是数据控制者。由于本应用不在我们的系统中收集个人数据，因此不存在需要我们管理的个人数据记录。</li>
+            <li><strong>法律依据。</strong>本应用自身不处理任何个人数据，无需 GDPR 第 6 条规定的处理依据。支付流程由 Google 在其自身的法律依据下完成。</li>
+            <li><strong>您的权利。</strong>即使我们不持有任何个人数据，您仍享有全部法定权利，包括访问、更正、删除、限制处理、数据可携带以及反对处理。对于 Google 持有的数据，请使用 Google 的账号与隐私控制工具。</li>
+            <li><strong>投诉。</strong>您有权向当地的数据保护监管机构提出投诉。</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. 儿童隐私</h2>
+        <p>3D BLOCK 是一款适合大众的益智游戏，不包含写实暴力，也不收集个人信息、位置信息或广告数据。我们不会有意收集儿童的个人信息；由于本应用不收集任何人的个人信息，因此也不存在需要我们持有的儿童数据。若您认为儿童向我们提供了信息，请与我们联系，我们会尽快处理。</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. 政策更新</h2>
+        <p>我们可能会不时更新本隐私政策。新版本将始终发布在本页面，并同步更新"最后更新"日期。更新后继续使用本应用，即表示您接受修订后的政策。</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. 联系我们</h2>
+        <p>如果您对本隐私政策或本应用有任何疑问或建议，请通过以下方式联系我们：</p>
+        <ul>
+            <li>邮箱：<a href="mailto:android.bolong@gmail.com">android.bolong@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 3D BLOCK 保留所有权利。</p>
+    </div>
+</div>
+</body>
+</html>
