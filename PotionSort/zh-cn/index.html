@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>魔药排序 隐私政策</title>
+<link rel="alternate" hreflang="en" href="https://bolong-mob.github.io/privacy-policy/PotionSort/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bolong-mob.github.io/privacy-policy/PotionSort/zh-cn/">
+<style>
+    :root {
+        --primary: #6b46c1;
+        --primary-soft: #f0eaff;
+        --accent: #f0b429;
+        --text: #4f4862;
+        --text-strong: #2c2340;
+        --text-secondary: #8b829f;
+        --background: #f7f4ff;
+        --surface: #ffffff;
+        --border: #e6dff5;
+        --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary: #c4a8ff;
+            --primary-soft: #2a2140;
+            --accent: #ffc94a;
+            --text: #d4cce6;
+            --text-strong: #f5f1ff;
+            --text-secondary: #a79dbb;
+            --background: #100a1e;
+            --surface: #1c1430;
+            --border: #32264e;
+        }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+        background-color: var(--background);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 0 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
+    .header { text-align: center; margin-bottom: 32px; }
+    .header .app-icon {
+        width: 72px; height: 72px; border-radius: 16px;
+        background: linear-gradient(160deg, #4a2c7a, #1b0f33);
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 24px; font-weight: 800; letter-spacing: -0.5px; color: #ffd76a;
+        border: 2px solid rgba(255, 215, 106, .35);
+    }
+    .header h1 { font-size: 28px; font-weight: 700; color: var(--text-strong); margin-bottom: 8px; }
+    .header .subtitle { color: var(--text-secondary); font-size: 15px; }
+    .lang-switcher { position: fixed; top: 16px; right: 16px; z-index: 1000; }
+    .lang-switcher select {
+        padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-strong); font-size: 14px; cursor: pointer;
+    }
+    .update-date {
+        text-align: center; color: var(--text-secondary); font-size: 14px;
+        margin-bottom: 24px; padding: 12px 20px; background: var(--surface);
+        border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .toc {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 24px 32px; margin-bottom: 24px; border: 1px solid var(--border);
+    }
+    .toc h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+    .toc ol { margin-left: 20px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: var(--primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    section {
+        background: var(--surface); border-radius: var(--radius);
+        padding: 28px 32px; margin-bottom: 16px; border: 1px solid var(--border);
+    }
+    section h2 {
+        font-size: 18px; font-weight: 600; color: var(--primary);
+        margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    section h2::before {
+        content: ""; width: 4px; height: 20px; background: var(--accent);
+        border-radius: 2px; flex-shrink: 0;
+    }
+    section p { font-size: 15px; margin-bottom: 12px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul { margin: 12px 0 12px 24px; }
+    section li { font-size: 15px; margin-bottom: 8px; }
+    section a { color: var(--primary); }
+    .highlight { background: var(--primary-soft); padding: 2px 8px; border-radius: 6px; font-weight: 500; color: var(--text-strong); }
+    .contact {
+        text-align: center; margin-top: 32px; padding: 24px;
+        background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border);
+    }
+    .contact p { color: var(--text-secondary); font-size: 14px; }
+    .contact a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    @media (max-width: 600px) {
+        .container { padding: 24px 0 60px; }
+        section { padding: 20px; }
+        .toc { padding: 20px; }
+        .header h1 { font-size: 24px; }
+    }
+</style>
+</head>
+<body>
+<div class="lang-switcher">
+    <select onchange="location.href=this.value" aria-label="语言">
+        <option value="../">English</option>
+        <option value="" selected>简体中文</option>
+    </select>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="app-icon">PS</div>
+        <h1>魔药排序 隐私政策</h1>
+        <p class="subtitle">一款放松的颜色分装魔药解谜游戏</p>
+    </div>
+
+    <div class="update-date">最后更新：2026 年 10 月 21 日</div>
+
+    <div class="toc">
+        <h2>目录</h2>
+        <ol>
+            <li><a href="#intro">简介</a></li>
+            <li><a href="#data-collection">我们收集的信息</a></li>
+            <li><a href="#data-use">信息的使用方式</a></li>
+            <li><a href="#permissions">应用权限</a></li>
+            <li><a href="#data-storage">数据存储与安全</a></li>
+            <li><a href="#third-party">第三方服务</a></li>
+            <li><a href="#ads">广告与您的选择</a></li>
+            <li><a href="#gdpr">您的权利与 GDPR</a></li>
+            <li><a href="#children">儿童隐私</a></li>
+            <li><a href="#changes">政策更新</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ol>
+    </div>
+
+    <section id="intro">
+        <h2>1. 简介</h2>
+        <p>魔药排序（Potion Sort，以下简称"本应用"）是一款 Android 平台的离线颜色分装解谜游戏。您在不同药水瓶之间倾倒彩色药水，把相同颜色归到一起，装满每个瓶子即可过关。本应用提供 100 多个自动生成的关卡、每日奖励、提示功能，以及可选的"去除广告"一次性内购。</p>
+        <p>我们非常重视您的隐私。本政策说明本应用如何处理您的信息、如何保护这些信息，以及您拥有哪些选择。使用本应用即表示您同意以下做法。</p>
+    </section>
+
+    <section id="data-collection">
+        <h2>2. 我们收集的信息</h2>
+        <p>本应用<span class="highlight">不收集、不上传、不存储您的个人信息</span>，也无需注册或登录。具体而言：</p>
+        <ul>
+            <li><strong>不收集账号信息。</strong>我们绝不会索取您的姓名、邮箱、电话号码或密码。</li>
+            <li><strong>不收集位置信息。</strong>本应用不申请定位权限，也不会读取您的 GPS 位置。</li>
+            <li><strong>不访问通讯录、相册、相机或麦克风。</strong>本应用不会申请这些权限。</li>
+            <li><strong>不包含统计或崩溃上报 SDK。</strong>我们不会建立用户画像，也不会跨应用追踪您的行为。</li>
+        </ul>
+        <p>本应用产生的数据全部保留在您自己的设备上：</p>
+        <ul>
+            <li>当前关卡、最高关卡与已通关数量；</li>
+            <li>金币余额、每日奖励连续天数与上次领取日期；</li>
+            <li>音效与振动设置；</li>
+            <li>是否已购买"去除广告"；</li>
+            <li>用于限制广告展示频率的本地计数。</li>
+        </ul>
+        <p>广告标识符与广告交互数据由 Google AdMob 按第 6、7 节说明处理，我们本身不会收到这些数据。</p>
+    </section>
+
+    <section id="data-use">
+        <h2>3. 信息的使用方式</h2>
+        <p>由于我们不在自己的系统中收集个人信息，因此不存在出售或共享个人信息的情况。设备上保存的数据仅用于：</p>
+        <ul>
+            <li>下次打开应用时恢复您的关卡进度、金币与连续签到；</li>
+            <li>应用您的音效与振动偏好；</li>
+            <li>记住您已购买"去除广告"，从而不再展示插屏广告；</li>
+            <li>执行激励广告与插屏广告的每日次数限制。</li>
+        </ul>
+        <p>您可以随时在系统设置中清除应用数据，或卸载本应用，从而删除上述全部数据。</p>
+    </section>
+
+    <section id="permissions">
+        <h2>4. 应用权限</h2>
+        <p>本应用仅申请游戏、广告与结算组件所必需的权限：</p>
+        <ul>
+            <li><strong>INTERNET</strong> 与 <strong>ACCESS_NETWORK_STATE</strong>：用于加载广告，以及就内购与 Google Play 通信。游戏本身完全支持离线游玩。</li>
+            <li><strong>VIBRATE</strong>：用于倒药、过关时的可选振动反馈，您可以在应用内关闭振动。</li>
+            <li><strong>com.android.vending.BILLING</strong>：用于通过 Google Play 完成可选的"去除广告"购买。</li>
+            <li><strong>com.google.android.gms.permission.AD_ID</strong>：允许 Google 移动广告 SDK 在符合您的同意选择的前提下访问广告 ID。</li>
+        </ul>
+        <p>本应用<span class="highlight">不申请存储、定位、相机、麦克风或通讯录权限</span>。您可以随时在系统设置中拒绝或撤销权限，游戏在没有这些权限的情况下仍可正常游玩。</p>
+    </section>
+
+    <section id="data-storage">
+        <h2>5. 数据存储与安全</h2>
+        <p>所有游戏数据都保存在您设备上本应用的私有目录中。Android 的应用沙箱机制可防止其它应用读取这些数据，卸载本应用或清除应用数据时会被一并删除。</p>
+        <p>我们不运营任何服务器，因此不会接收、存储或处理您的游戏数据。本应用关闭了针对其偏好设置的 Android 自动云备份。广告数据由 Google 按其自身的保留政策保存。</p>
+    </section>
+
+    <section id="third-party">
+        <h2>6. 第三方服务</h2>
+        <p>本应用集成了以下由 Google 提供的服务：</p>
+        <ul>
+            <li><strong>Google AdMob</strong>：展示激励广告与插屏广告，以维持游戏的免费运营。</li>
+            <li><strong>Google Play 结算</strong>：处理可选的"去除广告"一次性内购。</li>
+            <li><strong>Google 用户消息平台（UMP）</strong>：在法律要求的地区收集并保存您的广告同意选择。</li>
+        </ul>
+        <p>这些服务受 Google 自身的隐私政策约束，详见 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>。除此之外，本应用没有集成任何统计、追踪或社交类 SDK。</p>
+    </section>
+
+    <section id="ads">
+        <h2>7. 广告与您的选择</h2>
+        <p>本应用免费提供，依靠广告维持运营。应用会展示激励广告（例如增加一个空瓶或翻倍奖励）以及关卡之间的插屏广告。为了选择、投放和统计广告效果，Google AdMob 可能会收集：</p>
+        <ul>
+            <li>您的广告 ID 与应用集 ID；</li>
+            <li>IP 地址（可能用于估算大致地区）；</li>
+            <li>设备与应用信息（机型、系统版本、应用版本、语言）；</li>
+            <li>广告交互数据（展示、点击、奖励完成）与诊断数据。</li>
+        </ul>
+        <p>作为开发者，我们不会从 AdMob 获得您的个人数据，只能看到汇总后的收入报告。您可以随时在「Android 设置 → 隐私 → 广告」中<strong>重置或删除广告 ID</strong>，并<strong>关闭广告个性化</strong>。在法律要求的情况下，广告个性化取决于通过 Google UMP 表单收集的同意选择；您可以通过清除应用数据或重新安装应用来更改或撤回选择。</p>
+    </section>
+
+    <section id="gdpr">
+        <h2>8. 您的权利与 GDPR</h2>
+        <p>依据欧盟《通用数据保护条例》（GDPR）及类似法律，我们作出如下说明：</p>
+        <ul>
+            <li><strong>数据控制者。</strong>本应用的开发者是数据控制者。由于本应用不在我们的系统中收集个人数据，因此不存在需要我们管理的个人数据记录。</li>
+            <li><strong>法律依据。</strong>本应用自身不处理任何个人数据，无需 GDPR 第 6 条规定的处理依据。与广告相关的处理由 Google 按上述方式完成。</li>
+            <li><strong>您的权利。</strong>即使我们不持有任何个人数据，您仍享有全部法定权利，包括访问、更正、删除、限制处理、数据可携带以及反对处理。</li>
+            <li><strong>广告数据。</strong>如需就广告数据行使上述权利，请使用 Google 的隐私控制工具：<a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>。</li>
+            <li><strong>投诉。</strong>您有权向当地的数据保护监管机构提出投诉。</li>
+        </ul>
+    </section>
+
+    <section id="children">
+        <h2>9. 儿童隐私</h2>
+        <p>本应用是一款面向 13 岁及以上大众用户的解谜游戏，并非专门面向 13 岁以下儿童。我们不会有意收集儿童的个人信息；由于本应用不在我们的系统中收集个人数据，因此也不存在需要我们持有的儿童数据。</p>
+        <p>如果您是家长或监护人，对应用中展示的广告有顾虑，可以按上文说明在系统设置中关闭广告个性化。若您认为儿童向我们提供了信息，请与我们联系，我们会尽快处理。</p>
+    </section>
+
+    <section id="changes">
+        <h2>10. 政策更新</h2>
+        <p>我们可能会不时更新本隐私政策。新版本将始终发布在本页面，并同步更新"最后更新"日期；如有重大变更，我们还会在应用内进行提示。更新后继续使用本应用，即表示您接受修订后的政策。</p>
+    </section>
+
+    <section id="contact">
+        <h2>11. 联系我们</h2>
+        <p>如果您对本隐私政策或本应用有任何疑问或建议，请通过以下方式联系我们：</p>
+        <ul>
+            <li>邮箱：android.bolong@gmail.com</li>
+        </ul>
+        <p>您也可以在应用内直接反馈：打开「设置」，点击「反馈」。</p>
+    </section>
+
+    <div class="contact">
+        <p>&copy; 2026 魔药排序 保留所有权利。</p>
+    </div>
+</div>
+</body>
+</html>
