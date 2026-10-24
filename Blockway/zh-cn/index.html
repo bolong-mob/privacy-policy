@@ -16,14 +16,16 @@
     color:var(--gold);font-size:13px;letter-spacing:.12em}
   h1{font-size:40px;line-height:1.2;margin:18px 0 8px}
   h1 span{color:var(--gold)}
-  .sub{color:var(--dim);margin:0 0 32px}
-  h2{font-size:20px;margin:36px 0 10px}
+  .sub{color:var(--dim);margin:0 0 28px}
+  h2{font-size:20px;margin:34px 0 10px}
   p,li{color:#d7dcf2}
   ul{padding-left:22px}
   a{color:var(--gold)}
   .card{background:linear-gradient(180deg,rgba(34,45,82,.75),rgba(14,20,40,.85));
     border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:22px 0}
+  .toc{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:14px}
   footer{margin-top:48px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+  @media(max-width:560px){.toc{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -32,49 +34,98 @@
   <h1>隐私<span>政策</span></h1>
   <p class="sub">生效日期：2026 年 10 月 24 日 · 应用：Blockway（com.bolong.blockway）</p>
 
-  <p>Blockway 是一款单机解谜游戏，由 Google Play 账号 <strong>android.bolong@gmail.com</strong> 发布。本页说明你在游玩过程中会涉及哪些信息。</p>
+  <p>Blockway 是一款单机解谜游戏，由 Google Play 账号 <strong>android.bolong@gmail.com</strong> 发布。本政策说明游玩过程中会处理哪些信息、哪些数据只留在本机，以及你拥有哪些选择。</p>
 
   <div class="card">
-    <strong>简要说明：</strong>游戏没有账号、没有注册、没有聊天。你的进度只保存在本机。广告由 Google AdMob 提供，购买由 Google Play 结算处理。
+    <strong>简要说明：</strong>游戏没有账号、没有注册、没有聊天。你的进度只保存在本机。广告由 Google AdMob 提供，购买由 Google Play 结算处理，需要同意时会通过 Google UMP 收集选择。
   </div>
 
-  <h2>1. 存储在本机的信息</h2>
-  <ul>
-    <li>游戏进度：已解锁关卡、星级、最佳步数、金币与连续签到天数。</li>
-    <li>设置：音效、振动、去广告状态。</li>
-  </ul>
-  <p>这些数据保存在应用的私有目录中，不会上传到我们的服务器。清除应用数据或卸载应用即可删除。</p>
+  <h2>目录</h2>
+  <div class="toc">
+    <a href="#data">1. 我们处理的信息</a>
+    <a href="#use">2. 信息的使用方式</a>
+    <a href="#permissions">3. 应用权限</a>
+    <a href="#storage">4. 存储与安全</a>
+    <a href="#third">5. 第三方服务</a>
+    <a href="#ads">6. 广告与你的选择</a>
+    <a href="#rights">7. 你的权利与 GDPR</a>
+    <a href="#children">8. 儿童隐私</a>
+    <a href="#changes">9. 政策变更</a>
+    <a href="#contact">10. 联系方式</a>
+  </div>
 
-  <h2>2. 广告（Google AdMob）</h2>
-  <p>游戏会展示可选的激励视频（用于获得金币）以及少量全屏广告。Google Mobile Ads SDK 可能收集并共享：</p>
+  <h2 id="data">1. 我们处理的信息</h2>
+  <p>游戏本身不需要注册，也不会把个人信息发送到我们的服务器。以下数据只保存在应用在本机的私有目录中：</p>
   <ul>
-    <li>设备或其他标识符（包括广告 ID）</li>
-    <li>由 IP 地址推算的大致位置</li>
-    <li>应用内互动与广告互动</li>
-    <li>诊断与性能数据</li>
+    <li>游戏进度：已解锁关卡、星级、最佳步数与已通关数量。</li>
+    <li>游戏经济：金币余额、连续签到天数与上次领取日期。</li>
+    <li>设置：音效、振动与去广告状态。</li>
+    <li>本机广告频控计数。</li>
   </ul>
-  <p>上述数据用于广告、分析与防欺诈。在法律法规要求的地区（欧洲经济区、英国、瑞士），请求广告前会展示 Google 认证的同意表单。你也可以在应用设置或系统广告设置中调整选择。</p>
+  <p>广告标识符与广告互动数据由 Google AdMob 按第 5、6 节处理。我们不会直接收到这些数据，只能看到汇总后的收入报告。</p>
+
+  <h2 id="use">2. 信息的使用方式</h2>
+  <p>我们不在自己的服务器上收集个人信息，因此没有可出售或共享的个人数据。本机数据只用于：</p>
+  <ul>
+    <li>下次打开应用时恢复关卡进度、金币与签到；</li>
+    <li>应用你的音效与振动偏好；</li>
+    <li>记住你已购买「移除广告」，从而不再展示全屏广告；</li>
+    <li>执行激励广告与插屏广告的每日频控。</li>
+  </ul>
+  <p>你可以随时在 Android 设置中清除应用数据，或卸载应用来删除这些内容。</p>
+
+  <h2 id="permissions">3. 应用权限</h2>
+  <p>Blockway 只申请游戏、广告与结算组件所需的权限：</p>
+  <ul>
+    <li><strong>INTERNET</strong> 与 <strong>ACCESS_NETWORK_STATE</strong>：加载广告、联系 Google Play 完成购买。游戏本身完全可离线游玩。</li>
+    <li><strong>VIBRATE</strong>：可选的触觉反馈，可在设置中关闭。</li>
+    <li><strong>com.android.vending.BILLING</strong>：可选的「移除广告」购买。</li>
+    <li><strong>com.google.android.gms.permission.AD_ID</strong>：允许 Google Mobile Ads SDK 在符合你同意选择的前提下访问广告 ID。</li>
+  </ul>
+  <p>应用不会申请存储、位置、相机、麦克风或通讯录权限。</p>
+
+  <h2 id="storage">4. 存储与安全</h2>
+  <p>所有游戏数据保存在应用私有目录中，受 Android 应用沙箱保护，卸载或清除数据后即被删除。我们不运营存储游戏数据的服务器。应用已关闭 Android 的自动云备份。广告与结算 SDK 的网络请求使用 HTTPS 加密连接。</p>
+
+  <h2 id="third">5. 第三方服务</h2>
+  <p>应用集成以下由 Google 提供的服务：</p>
+  <ul>
+    <li><strong>Google AdMob</strong>：提供激励视频与插屏广告。</li>
+    <li><strong>Google Play 结算</strong>：处理可选的「移除广告」一次性购买。我们不会获得或保存你的银行卡信息。</li>
+    <li><strong>Google UMP</strong>：在法律法规要求的地区收集并保存广告同意选择。</li>
+  </ul>
+  <p>这些服务遵循 Google 自己的隐私政策：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>。除上述服务外，应用没有接入分析、崩溃统计、追踪或社交 SDK。</p>
+
+  <h2 id="ads">6. 广告与你的选择</h2>
+  <p>Blockway 免费，并通过广告获得收入。应用会展示可选的激励视频（例如获取金币）以及关卡之间的少量全屏广告。为了选择、投放和衡量广告，Google AdMob 可能收集并共享：</p>
+  <ul>
+    <li>广告 ID 与 App Set ID；</li>
+    <li>IP 地址（可能用于估算大致地区）；</li>
+    <li>设备与应用信息（型号、系统版本、应用版本、语言）；</li>
+    <li>广告互动数据（展示、点击、奖励完成）与诊断数据。</li>
+  </ul>
+  <p>这些数据用于广告、分析与防欺诈。在法律法规要求的地区（欧洲经济区、英国、瑞士），请求广告前会展示 Google 认证的同意表单。你可以在 Android 设置 → 隐私 → 广告中重置或删除广告 ID、关闭个性化广告；也可以通过清除应用数据或重装应用来更改/撤回同意。</p>
   <p>了解更多：<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 如何使用使用其服务的网站或应用中的信息</a>。</p>
 
-  <h2>3. 购买</h2>
-  <p>可选的「移除广告」商品通过 Google Play 结算处理。我们不会获得或保存你的银行卡信息，只会收到解锁功能所需的购买状态。</p>
+  <h2 id="rights">7. 你的权利与 GDPR</h2>
+  <ul>
+    <li><strong>数据控制者。</strong> Blockway 的开发者是数据控制者。由于游戏不在我们的服务器上收集个人数据，我们没有需要管理的个人数据记录。</li>
+    <li><strong>法律依据。</strong> 游戏本身不处理个人数据，因此不需要 Article 6 的法律依据。广告相关处理由 Google 按上述说明进行。</li>
+    <li><strong>你的权利。</strong> 即使我们不持有个人数据，你仍拥有访问、更正、删除、限制处理、数据可携带与反对等权利。</li>
+    <li><strong>广告数据。</strong> 如需对广告数据行使权利，请使用 Google 的隐私控制：<a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>。</li>
+    <li><strong>投诉。</strong> 你有权向当地数据保护机构投诉。</li>
+  </ul>
 
-  <h2>4. 儿童</h2>
-  <p>Blockway 不面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。如你认为儿童提供了信息，请联系我们协助删除。</p>
+  <h2 id="children">8. 儿童隐私</h2>
+  <p>Blockway 面向 13 岁及以上的一般用户，不面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。如家长或监护人对应用中的广告有疑虑，可以在系统设置中关闭广告个性化。如你认为儿童向我们提供了信息，请联系我们，我们会尽快处理。</p>
 
-  <h2>5. 数据保留与删除</h2>
-  <p>我们不运营存储游戏数据的服务器。本地数据会一直保留，直到你清除应用数据或卸载应用。广告数据可通过 Google 广告设置与隐私控制管理。你也可以联系我们咨询删除相关事宜。</p>
+  <h2 id="changes">9. 政策变更</h2>
+  <p>如本政策发生变化，新版本会发布在此地址并更新生效日期；重要变更也会写进应用更新说明。</p>
 
-  <h2>6. 安全</h2>
-  <p>游戏数据保存在应用沙箱中。广告与结算 SDK 的网络请求使用加密连接（HTTPS）。</p>
+  <h2 id="contact">10. 联系方式</h2>
+  <p>隐私相关问题请发送邮件至 <a href="mailto:android.bolong@gmail.com">android.bolong@gmail.com</a>，也可以在应用内打开「设置 → 意见反馈」。</p>
 
-  <h2>7. 政策变更</h2>
-  <p>如本政策发生变化，新版本会发布在此地址，并更新生效日期。</p>
-
-  <h2>8. 联系方式</h2>
-  <p>隐私相关问题请发送邮件至 <a href="mailto:android.bolong@gmail.com">android.bolong@gmail.com</a>。</p>
-
-  <footer>© 2026 Blockway。Google Play 与 AdMob 是 Google LLC 的商标。</footer>
+  <footer>© 2026 Blockway。Google Play、AdMob 与 Google UMP 是 Google LLC 的商标。</footer>
 </main>
 </body>
 </html>

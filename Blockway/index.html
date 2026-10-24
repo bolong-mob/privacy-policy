@@ -5,29 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blockway — Privacy Policy</title>
 <style>
-  :root{
-    --bg:#080b18; --panel:#121a34; --line:#2c3a68; --text:#eef1ff; --dim:#a9b4d8; --gold:#ffc94a;
-  }
+  :root{--bg:#080b18;--panel:#121a34;--line:#2c3a68;--text:#eef1ff;--dim:#a9b4d8;--gold:#ffc94a}
   *{box-sizing:border-box}
-  body{
-    margin:0; background:radial-gradient(900px 600px at 80% -10%, #2b2360 0%, transparent 60%),
-    radial-gradient(700px 500px at 0% 110%, #0d3a44 0%, transparent 55%), var(--bg);
-    color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    line-height:1.7; padding:48px 20px 80px;
-  }
+  body{margin:0;background:radial-gradient(900px 600px at 80% -10%,#2b2360 0%,transparent 60%),
+    radial-gradient(700px 500px at 0% 110%,#0d3a44 0%,transparent 55%),var(--bg);
+    color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.75;padding:48px 20px 80px}
   main{max-width:820px;margin:0 auto}
   .badge{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;
     color:var(--gold);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
   h1{font-size:42px;line-height:1.15;margin:18px 0 8px}
   h1 span{color:var(--gold)}
-  .sub{color:var(--dim);margin:0 0 32px}
-  h2{font-size:20px;margin:36px 0 10px}
+  .sub{color:var(--dim);margin:0 0 28px}
+  h2{font-size:20px;margin:34px 0 10px}
   p,li{color:#d7dcf2}
   ul{padding-left:22px}
   a{color:var(--gold)}
-  .card{background:linear-gradient(180deg, rgba(34,45,82,.75), rgba(14,20,40,.85));
+  .card{background:linear-gradient(180deg,rgba(34,45,82,.75),rgba(14,20,40,.85));
     border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:22px 0}
+  .toc{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:14px}
   footer{margin-top:48px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+  @media(max-width:560px){.toc{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -36,49 +34,98 @@
   <h1>Privacy <span>Policy</span></h1>
   <p class="sub">Effective date: October 24, 2026 · App: Blockway (com.bolong.blockway)</p>
 
-  <p>Blockway is a single-player puzzle game published by an independent developer under the Google Play account <strong>android.bolong@gmail.com</strong>. This page explains what information is processed when you play.</p>
+  <p>Blockway is a single-player puzzle game published by an independent developer under the Google Play account <strong>android.bolong@gmail.com</strong>. This policy explains what information is processed when you play, what stays on your device, and what choices you have.</p>
 
   <div class="card">
-    <strong>Short version:</strong> the game has no account, no sign-up and no chat. Your progress stays on your device. Ads are provided by Google AdMob and purchases are handled by Google Play.
+    <strong>Short version:</strong> the game has no account, no sign-up and no chat. Your progress stays on your device. Advertising is provided by Google AdMob, purchases are handled by Google Play, and consent (where required) is collected through Google UMP.
   </div>
 
-  <h2>1. Information stored on your device</h2>
-  <ul>
-    <li>Game progress: unlocked levels, stars, best move counts, coins and daily-reward streak.</li>
-    <li>Settings: sound, vibration and ad-removal status.</li>
-  </ul>
-  <p>These values are stored in the app's private storage. They are not uploaded to our servers. Removing the app or clearing its data deletes them.</p>
+  <h2>Contents</h2>
+  <div class="toc">
+    <a href="#data">1. Information we process</a>
+    <a href="#use">2. How we use it</a>
+    <a href="#permissions">3. App permissions</a>
+    <a href="#storage">4. Storage and security</a>
+    <a href="#third">5. Third-party services</a>
+    <a href="#ads">6. Advertising and your choices</a>
+    <a href="#rights">7. Your rights and GDPR</a>
+    <a href="#children">8. Children</a>
+    <a href="#changes">9. Policy changes</a>
+    <a href="#contact">10. Contact</a>
+  </div>
 
-  <h2>2. Advertising (Google AdMob)</h2>
-  <p>Blockway shows optional rewarded videos (to earn coins) and occasional full-screen ads. The Google Mobile Ads SDK may collect and share:</p>
+  <h2 id="data">1. Information we process</h2>
+  <p>The game itself does not require registration and does not send your personal data to our servers. The following values are stored only in the app's private storage on your device:</p>
   <ul>
-    <li>Device or other identifiers (including the advertising ID)</li>
-    <li>Approximate location derived from IP address</li>
-    <li>App interactions and ad interactions</li>
-    <li>Diagnostics and performance data</li>
+    <li>Game progress: unlocked levels, stars, best move counts and completed levels.</li>
+    <li>In-game economy: coin balance, daily-reward streak and the date of your last claim.</li>
+    <li>Settings: sound, vibration and ad-removal status.</li>
+    <li>A local counter used to limit how often ads are shown.</li>
   </ul>
-  <p>This data is used for advertising, analytics and fraud prevention. Where required by law (EEA, UK, Switzerland), a Google-certified consent message is shown before ads are requested. You can change your choice later in the app's settings or through your device's ad settings.</p>
+  <p>Advertising identifiers and ad interaction data are processed by Google AdMob as described in sections 5 and 6. We do not receive that data ourselves; we only see aggregated revenue reports.</p>
+
+  <h2 id="use">2. How we use it</h2>
+  <p>Because we do not collect personal information on our own systems, there is nothing for us to sell or share. The data stored on your device is used solely to:</p>
+  <ul>
+    <li>restore your level progress, coins and daily streak the next time you open the app;</li>
+    <li>apply your sound and vibration preferences;</li>
+    <li>remember that you purchased "Remove Ads" so full-screen ads are not shown;</li>
+    <li>enforce daily limits on rewarded and interstitial advertising.</li>
+  </ul>
+  <p>You can erase all of it at any time by clearing the app's data in Android settings or by uninstalling the app.</p>
+
+  <h2 id="permissions">3. App permissions</h2>
+  <p>Blockway requests only the permissions required by the game, advertising and billing components:</p>
+  <ul>
+    <li><strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong> — to load ads and contact Google Play for purchases. The game itself is fully playable offline.</li>
+    <li><strong>VIBRATE</strong> — optional haptic feedback when you move a block or complete a level. You can turn it off in Settings.</li>
+    <li><strong>com.android.vending.BILLING</strong> — required for the optional "Remove Ads" purchase.</li>
+    <li><strong>com.google.android.gms.permission.AD_ID</strong> — allows the Google Mobile Ads SDK to access the advertising ID, subject to your consent choices.</li>
+  </ul>
+  <p>The app requests no storage, location, camera, microphone or contacts permissions.</p>
+
+  <h2 id="storage">4. Storage and security</h2>
+  <p>All game data is kept inside the app's private directory on your device. Android's application sandbox prevents other apps from reading it, and it is removed when you uninstall the app or clear its data. We do not operate a server and therefore never receive, store or process your game data. The app disables Android's automatic cloud backup for its preferences. Network requests made by the advertising and billing SDKs use encrypted connections (HTTPS).</p>
+
+  <h2 id="third">5. Third-party services</h2>
+  <p>The app integrates the following services provided by Google:</p>
+  <ul>
+    <li><strong>Google AdMob</strong> — serves the rewarded and interstitial ads that keep the game free.</li>
+    <li><strong>Google Play Billing</strong> — processes the optional one-time "Remove Ads" purchase. We never receive or store your payment card details.</li>
+    <li><strong>Google User Messaging Platform (UMP)</strong> — collects and stores your advertising consent choices where required by law.</li>
+  </ul>
+  <p>These services operate under Google's own privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>. Apart from them, the app integrates no analytics, crash-reporting, tracking or social-media SDKs.</p>
+
+  <h2 id="ads">6. Advertising and your choices</h2>
+  <p>Blockway is free and is funded by advertising. The app shows optional rewarded videos (for example, to earn coins) and occasional full-screen ads between levels. To select, deliver and measure ads, Google AdMob may collect and share:</p>
+  <ul>
+    <li>your advertising ID and app set ID;</li>
+    <li>IP address, which may be used to estimate a coarse region;</li>
+    <li>device and app information (model, operating system version, app version, language);</li>
+    <li>ad interaction data (impressions, clicks, reward completion) and diagnostic data.</li>
+  </ul>
+  <p>This data is used for advertising, analytics and fraud prevention. Where required by law (EEA, UK, Switzerland), a Google-certified consent message is shown before ads are requested. You can reset or delete your advertising ID and turn off ad personalization in Android Settings → Privacy → Ads. You can change or withdraw your consent choice by clearing the app's data or reinstalling the app.</p>
   <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
 
-  <h2>3. Purchases</h2>
-  <p>The optional "Remove Ads" product is processed by Google Play Billing. We do not receive or store your payment card details. Google provides us only with the purchase status needed to unlock the feature.</p>
+  <h2 id="rights">7. Your rights and GDPR</h2>
+  <ul>
+    <li><strong>Data controller.</strong> The developer of Blockway is the data controller. Because the game does not collect personal data on our own systems, there is no personal data record for us to administer.</li>
+    <li><strong>Legal basis.</strong> The game itself processes no personal data, so no legal basis under Article 6 is required for it. Advertising-related processing is carried out by Google as described above.</li>
+    <li><strong>Your rights.</strong> Even though we hold no personal data, you retain all your rights, including access, rectification, erasure, restriction of processing, data portability and objection.</li>
+    <li><strong>Advertising data.</strong> To exercise these rights with respect to advertising data, use Google's privacy controls at <a href="https://myadcenter.google.com" target="_blank" rel="noopener">https://myadcenter.google.com</a>.</li>
+    <li><strong>Complaints.</strong> You have the right to lodge a complaint with your local data protection authority.</li>
+  </ul>
 
-  <h2>4. Children</h2>
-  <p>Blockway is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information, contact us and we will help remove it.</p>
+  <h2 id="children">8. Children</h2>
+  <p>Blockway is a puzzle game intended for a general audience aged 13 and over and is not directed at children under 13. We do not knowingly collect personal information from children. If you are a parent or guardian and have concerns about the advertising shown in the app, you can disable ad personalization in the system settings. If you believe a child has provided information to us, contact us and we will act promptly.</p>
 
-  <h2>5. Data retention and deletion</h2>
-  <p>We do not operate a server that stores your game data. Local data remains until you clear the app's storage or uninstall the app. For advertising data, use Google's ad settings and privacy controls. You may also contact us to ask questions about deletion.</p>
+  <h2 id="changes">9. Policy changes</h2>
+  <p>If this policy changes, the new version will always be published at this address with an updated effective date. Significant changes will also be noted in the app's release notes.</p>
 
-  <h2>6. Security</h2>
-  <p>Game data is kept in the app's sandbox. Network requests made by the advertising and billing SDKs use encrypted connections (HTTPS).</p>
+  <h2 id="contact">10. Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:android.bolong@gmail.com">android.bolong@gmail.com</a>. You can also open Settings → Feedback inside the app.</p>
 
-  <h2>7. Changes</h2>
-  <p>If this policy changes, the new version will be published at this address with an updated effective date.</p>
-
-  <h2>8. Contact</h2>
-  <p>Questions about privacy? Email <a href="mailto:android.bolong@gmail.com">android.bolong@gmail.com</a>.</p>
-
-  <footer>© 2026 Blockway. Google Play and AdMob are trademarks of Google LLC.</footer>
+  <footer>© 2026 Blockway. Google Play, AdMob and Google UMP are trademarks of Google LLC.</footer>
 </main>
 </body>
 </html>
